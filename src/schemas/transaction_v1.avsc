@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "com.fintechflow.core",
+  "fields": [
+    {"name": "transaction_id", "type": "string"},
+    {"name": "user_id", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "timestamp", "type": "long"}
+  ]
+}
