@@ -1,7 +1,7 @@
 import pathlib
 
-def show_banner():
 
+def show_banner():
     root_dir = pathlib.Path(__file__).resolve().parent.parent.parent
     banner_path = root_dir / "resources" / "banner.txt"
 
