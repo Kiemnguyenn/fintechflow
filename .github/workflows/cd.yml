@@ -32,7 +32,7 @@ jobs:
         uses: azure/setup-helm@v4
 
       - name: Deploy to Prod (Dry-run Mode)
-        run: helm upgrade --install fintechflow-prod ./helm/fintechflow --values ./helm/fintechflow/values-prod.yaml --dry-run
+        run: helm template fintechflow-prod ./helm/fintechflow --values ./helm/fintechflow/values-prod.yaml
 
   notify-slack:
     runs-on: ubuntu-latest
